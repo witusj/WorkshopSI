@@ -28,26 +28,8 @@ Deze workshop is ontwikkeld voor mensen die nog geen of zeer beperkte ervaring h
 ## De instructeur
 
 [Witek ten Hove](https://nl.linkedin.com/in/witektenhove) is hoofddocent aan de Hogeschool van Arnhem en Nijmegen en voorzitter van de R-User Group in Nijmegen. Na zijn studie aan de Universiteit van Maastricht heeft hij bij verschillende multinationals gewerkt als business analist, beurshandelaar en commodity trader. Zijn specialisaties zijn onder andere data science en online / blended learning.
-
-## Workshop sessies
-De workshop bestaat uit drie sessies:
-
-* __Sessie 1__: Dinsdag 6 september 2016 van 18:30 tot 21:00u
-* __Sessie 2__: Dinsdag 13 september 2016 van 18:30 tot 21:00u
-* __Sessie 3__: Dinsdag 20 september 2016 van 18:30 tot 21:00u
-
-Locatie: `r paste0(adres, " (", extra, ")")`
-
-```{r Map1, echo=FALSE, results='asis', tidy=FALSE}
-plot(M1)
-```
-<br>
-Tijdens iedere sessie ga je werken aan een opdracht. Je krijgt een dataset (of een verwijzing naar een online databron) en gaat hier informatie uit halen. De instructeur helpt je als je vastloopt of geeft suggesties voor verbeteringen van je code.
-
-## Inschrijving
-Aanmelding geschiedt via dit <a href="https://drive.google.com/open?id=1rP6KIbqikbLQJ9hJRQQJMWnbCTgfhA0yJLa84JGklVQ" target="_blank">formulier</a>. Er kunnen maximaal 16 personen deelnemen. Mocht er na de aanmelding iets veranderd zijn waardoor je niet meer kunt deelnemen, geef dit dan door aan de instructeur via witek.tenhove@han.nl.
-
-Inschrijving vindt plaats naar volgorde van aanmelding. Nadat de aanmeldingstermijn is verstreken, zullen de deelnemers per mail worden geinformeerd.
+<br><br>
+De worskhop bestaat uit drie sessies: Inlezen, Analyseren en Presenteren. Tijdens iedere sessie ga je werken aan opdrachten. Je krijgt een dataset (of een verwijzing naar een online databron) en gaat hier informatie uit halen. De instructeur helpt je als je vastloopt of geeft suggesties voor verbeteringen van je code.
 
 ## Voorbereiding
 Om direct aan de gang te kunnen gaan tijdens de workshop sessies is het belangrijk dat je R op je computer installeert. Zie [hier](https://youtu.be/cX532N_XLIs?list=PLqzoL9-eJTNBDdKgJgJzaQcY6OXmsXAHU) voor instructies (Engels).

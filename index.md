@@ -15,114 +15,8 @@ Deze workshop is ontwikkeld voor mensen die nog geen of zeer beperkte ervaring h
 ## De instructeur
 
 [Witek ten Hove](https://nl.linkedin.com/in/witektenhove) is hoofddocent aan de Hogeschool van Arnhem en Nijmegen en voorzitter van de R-User Group in Nijmegen. Na zijn studie aan de Universiteit van Maastricht heeft hij bij verschillende multinationals gewerkt als business analist, beurshandelaar en commodity trader. Zijn specialisaties zijn onder andere data science en online / blended learning.
-
-## Workshop sessies
-De workshop bestaat uit drie sessies:
-
-* __Sessie 1__: Dinsdag 6 september 2016 van 18:30 tot 21:00u
-* __Sessie 2__: Dinsdag 13 september 2016 van 18:30 tot 21:00u
-* __Sessie 3__: Dinsdag 20 september 2016 van 18:30 tot 21:00u
-
-Locatie: HAN, Kapittelweg 33, 6525 EN Nijmegen (Lokaal C106)
-
-<!-- Map generated in R 3.3.0 by googleVis 0.5.10 package -->
-<!-- Wed Aug 31 08:01:54 2016 -->
-
-
-<!-- jsHeader -->
-<script type="text/javascript">
- 
-// jsData 
-function gvisDataMapID306470db79b () {
-var data = new google.visualization.DataTable();
-var datajson =
-[
- [
- "HAN, Kapittelweg 33, 6525 EN Nijmegen",
-"Lokaal C106<br><a href='https://goo.gl/maps/PA9xeFzKYNp'>Get directions</a>" 
-] 
-];
-data.addColumn('string','adres');
-data.addColumn('string','tooltip');
-data.addRows(datajson);
-return(data);
-}
- 
-// jsDrawChart
-function drawChartMapID306470db79b() {
-var data = gvisDataMapID306470db79b();
-var options = {};
-options["showTip"] = true;
-options["mapType"] = "normal";
-options["zoomLevel"] =     16;
-options["width"] =    100;
-options["height"] =    300;
-
-    var chart = new google.visualization.Map(
-    document.getElementById('MapID306470db79b')
-    );
-    chart.draw(data,options);
-    
-
-}
-  
- 
-// jsDisplayChart
-(function() {
-var pkgs = window.__gvisPackages = window.__gvisPackages || [];
-var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
-var chartid = "map";
-  
-// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
-var i, newPackage = true;
-for (i = 0; newPackage && i < pkgs.length; i++) {
-if (pkgs[i] === chartid)
-newPackage = false;
-}
-if (newPackage)
-  pkgs.push(chartid);
-  
-// Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartMapID306470db79b);
-})();
-function displayChartMapID306470db79b() {
-  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
-  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
-  window.clearTimeout(window.__gvisLoad);
-  // The timeout is set to 100 because otherwise the container div we are
-  // targeting might not be part of the document yet
-  window.__gvisLoad = setTimeout(function() {
-  var pkgCount = pkgs.length;
-  google.load("visualization", "1", { packages:pkgs, callback: function() {
-  if (pkgCount != pkgs.length) {
-  // Race condition where another setTimeout call snuck in after us; if
-  // that call added a package, we must not shift its callback
-  return;
-}
-while (callbacks.length > 0)
-callbacks.shift()();
-} });
-}, 100);
-}
- 
-// jsFooter
-</script>
- 
-<!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMapID306470db79b"></script>
- 
-<!-- divChart -->
-  
-<div id="MapID306470db79b" 
-  style="width: 100; height: 300;">
-</div>
-<br>
-Tijdens iedere sessie ga je werken aan een opdracht. Je krijgt een dataset (of een verwijzing naar een online databron) en gaat hier informatie uit halen. De instructeur helpt je als je vastloopt of geeft suggesties voor verbeteringen van je code.
-
-## Inschrijving
-Aanmelding geschiedt via dit <a href="https://drive.google.com/open?id=1rP6KIbqikbLQJ9hJRQQJMWnbCTgfhA0yJLa84JGklVQ" target="_blank">formulier</a>. Er kunnen maximaal 16 personen deelnemen. Mocht er na de aanmelding iets veranderd zijn waardoor je niet meer kunt deelnemen, geef dit dan door aan de instructeur via witek.tenhove@han.nl.
-
-Inschrijving vindt plaats naar volgorde van aanmelding. Nadat de aanmeldingstermijn is verstreken, zullen de deelnemers per mail worden geinformeerd.
+<br><br>
+De worskhop bestaat uit drie sessies: Inlezen, Analyseren en Presenteren. Tijdens iedere sessie ga je werken aan opdrachten. Je krijgt een dataset (of een verwijzing naar een online databron) en gaat hier informatie uit halen. De instructeur helpt je als je vastloopt of geeft suggesties voor verbeteringen van je code.
 
 ## Voorbereiding
 Om direct aan de gang te kunnen gaan tijdens de workshop sessies is het belangrijk dat je R op je computer installeert. Zie [hier](https://youtu.be/cX532N_XLIs?list=PLqzoL9-eJTNBDdKgJgJzaQcY6OXmsXAHU) voor instructies (Engels).
@@ -828,365 +722,365 @@ survChart <- gvisBubbleChart(surveyDF,
 plot(survChart)
 ```
 
-<!-- BubbleChart generated in R 3.3.0 by googleVis 0.5.10 package -->
-<!-- Wed Aug 31 08:01:55 2016 -->
+<!-- BubbleChart generated in R 3.3.2 by googleVis 0.6.1 package -->
+<!-- Fri Dec 30 07:04:27 2016 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataBubbleChartID30648046ddb () {
+function gvisDataBubbleChartID30401ee4ffea () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
  [
- "ELIN",
+"ELIN",
 2,
 4,
-"Kans" 
+"Kans"
 ],
 [
- "NIKIA",
+"NIKIA",
 4,
 5,
-"Kans" 
+"Kans"
 ],
 [
- "MARIO",
+"MARIO",
 3,
 5,
-"Kans" 
+"Kans"
 ],
 [
- "ROMAINE",
+"ROMAINE",
 3,
 3,
-"Kans" 
+"Kans"
 ],
 [
- "ALLYSON",
+"ALLYSON",
 4,
 2,
-"Kans" 
+"Kans"
 ],
 [
- "VADA",
+"VADA",
 2,
 4,
-"Kans" 
+"Kans"
 ],
 [
- "MYRLE",
+"MYRLE",
 1,
 4,
-"Kans" 
+"Kans"
 ],
 [
- "VERTIE",
+"VERTIE",
 3,
 3,
-"Kans" 
+"Kans"
 ],
 [
- "DAISY",
+"DAISY",
 3,
 3,
-"Kans" 
+"Kans"
 ],
 [
- "KATHERINE",
+"KATHERINE",
 4,
 4,
-"Kans" 
+"Kans"
 ],
 [
- "SID",
+"SID",
 4,
 3,
-"Kans" 
+"Kans"
 ],
 [
- "LERA",
+"LERA",
 4,
 4,
-"Kans" 
+"Kans"
 ],
 [
- "MARLYS",
+"MARLYS",
 3,
 4,
-"Kans" 
+"Kans"
 ],
 [
- "ANTON",
+"ANTON",
 5,
 3,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "CHRISTEN",
+"CHRISTEN",
 3,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "KYLEE",
+"KYLEE",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "KAI",
+"KAI",
 2,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "NELL",
+"NELL",
 3,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "KIRSTIE",
+"KIRSTIE",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "THERESIA",
+"THERESIA",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "MOSES",
+"MOSES",
 3,
 5,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "BRYANT",
+"BRYANT",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "LEZLIE",
+"LEZLIE",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "SANDI",
+"SANDI",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "ARNETTA",
+"ARNETTA",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "LAVINA",
+"LAVINA",
 2,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "IGNACIA",
+"IGNACIA",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "ARLETHA",
+"ARLETHA",
 4,
 3,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "WILTON",
+"WILTON",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "ALTHA",
+"ALTHA",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "GEORGIANN",
+"GEORGIANN",
 5,
 5,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "EMMETT",
+"EMMETT",
 2,
 5,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "MAMIE",
+"MAMIE",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "ROXANA",
+"ROXANA",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "JERRY",
+"JERRY",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "MARINE",
+"MARINE",
 2,
 5,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "HONG",
+"HONG",
 3,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "RHETT",
+"RHETT",
 2,
 2,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "DEDRA",
+"DEDRA",
 5,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "MALIK",
+"MALIK",
 5,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "KELSEY",
+"KELSEY",
 3,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "SHANDI",
+"SHANDI",
 3,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "HERMINA",
+"HERMINA",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "CATHARINE",
+"CATHARINE",
 3,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "SHERRIL",
+"SHERRIL",
 2,
 5,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "SHAWANA",
+"SHAWANA",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "ALICA",
+"ALICA",
 3,
 3,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "SHAREN",
+"SHAREN",
 4,
 3,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "CAROLEE",
+"CAROLEE",
 4,
 3,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "YASUKO",
+"YASUKO",
 4,
 3,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "FUMIKO",
+"FUMIKO",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "SHON",
+"SHON",
 5,
 5,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "MONNIE",
+"MONNIE",
 4,
 5,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "BETTYE",
+"BETTYE",
 5,
 5,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "SUE",
+"SUE",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "JARED",
+"JARED",
 2,
 2,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "LAURI",
+"LAURI",
 5,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "FAWN",
+"FAWN",
 4,
 3,
-"Bedreiging" 
+"Bedreiging"
 ] 
 ];
 data.addColumn('string','Naam');
@@ -1198,16 +1092,16 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartBubbleChartID30648046ddb() {
-var data = gvisDataBubbleChartID30648046ddb();
+function drawChartBubbleChartID30401ee4ffea() {
+var data = gvisDataBubbleChartID30401ee4ffea();
 var options = {};
 options["hAxis"] = {minValue:1, maxValue:5, title:"Gevolg"};
 options["vAxis"] = {minValue:1, maxValue:5, title:"Waarschijnlijkheid"};
-options["width"] =    700;
-options["height"] =    700;
+options["width"] = 700;
+options["height"] = 700;
 
     var chart = new google.visualization.BubbleChart(
-    document.getElementById('BubbleChartID30648046ddb')
+    document.getElementById('BubbleChartID30401ee4ffea')
     );
     chart.draw(data,options);
     
@@ -1231,9 +1125,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartBubbleChartID30648046ddb);
+callbacks.push(drawChartBubbleChartID30401ee4ffea);
 })();
-function displayChartBubbleChartID30648046ddb() {
+function displayChartBubbleChartID30401ee4ffea() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -1257,11 +1151,11 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBubbleChartID30648046ddb"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBubbleChartID30401ee4ffea"></script>
  
 <!-- divChart -->
   
-<div id="BubbleChartID30648046ddb" 
+<div id="BubbleChartID30401ee4ffea" 
   style="width: 700; height: 700;">
 </div>
 

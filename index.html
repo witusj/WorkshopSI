@@ -15,14 +15,18 @@
 <title>R-Workshop</title>
 
 <script src="index_files/jquery-1.11.3/jquery.min.js"></script>
-<script src="index_files/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="index_files/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="index_files/tocify-1.9.1/jquery.tocify.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="index_files/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
 <script src="index_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="index_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="index_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="index_files/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="index_files/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="index_files/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="index_files/navigation-1.1/tabsets.js"></script>
+<script src="index_files/navigation-1.1/codefolding.js"></script>
+<link href="index_files/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="index_files/highlightjs-1.1/highlight.js"></script>
 <script src="index_files/htmlwidgets-0.6/htmlwidgets.js"></script>
 <link href="index_files/plotlyjs-1.10.1/plotly-htmlwidgets.css" rel="stylesheet" />
 <script src="index_files/plotlyjs-1.10.1/plotly-latest.min.js"></script>
@@ -33,10 +37,6 @@
 <script src="index_files/leaflet-binding-1.0.1/leaflet.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet"
-      href="index_files/highlight/default.css"
-      type="text/css" />
-<script src="index_files/highlight/highlight.js"></script>
 <style type="text/css">
   pre:not([class]) {
     background-color: white;
@@ -107,10 +107,10 @@ button.code-folding-btn:focus {
 </style>
 
 
+
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-<script src="index_files/navigation-1.1/tabsets.js"></script>
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
@@ -118,7 +118,9 @@ $(document).ready(function () {
 </script>
 
 <!-- code folding -->
-<script src="index_files/navigation-1.1/codefolding.js"></script>
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
 <script>
 $(document).ready(function () {
   window.initializeCodeFolding("show" === "show");
@@ -142,7 +144,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
@@ -201,8 +203,9 @@ div.tocify {
 }
 
 .tocify-subheader .tocify-item {
-  font-size: 0.9em;
-  padding-left: 5px;
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -238,7 +241,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">R-Workshop</h1>
 <h4 class="author"><em>Witek ten Hove - <a href="mailto:wfth1969@gmail.com">wfth1969@gmail.com</a></em></h4>
-<h4 class="date"><em>31 August, 2016</em></h4>
+<h4 class="date"><em>30 December, 2016</em></h4>
 
 </div>
 
@@ -251,109 +254,7 @@ div.tocify {
 <p>Deze workshop is ontwikkeld voor mensen die nog geen of zeer beperkte ervaring hebben met programmeren. Wellicht heb je al een beetje ervaring met Excel of SPSS. Dit is handig, maar geen vereiste om deel te kunnen nemen. R is een programmeertaal, maar zeer eenvoudig qua opzet en je zult merken dat je al heel snel krachtige stukjes code (scripts) kunt schrijven. Je hoeft geen investeringen te doen, want R is volledig open source en werkt op zowel Mac OS, Windows als Linux.</p>
 <div id="de-instructeur" class="section level2">
 <h2>De instructeur</h2>
-<p><a href="https://nl.linkedin.com/in/witektenhove">Witek ten Hove</a> is hoofddocent aan de Hogeschool van Arnhem en Nijmegen en voorzitter van de R-User Group in Nijmegen. Na zijn studie aan de Universiteit van Maastricht heeft hij bij verschillende multinationals gewerkt als business analist, beurshandelaar en commodity trader. Zijn specialisaties zijn onder andere data science en online / blended learning.</p>
-</div>
-<div id="workshop-sessies" class="section level2">
-<h2>Workshop sessies</h2>
-<p>De workshop bestaat uit drie sessies:</p>
-<ul>
-<li><strong>Sessie 1</strong>: Dinsdag 6 september 2016 van 18:30 tot 21:00u</li>
-<li><strong>Sessie 2</strong>: Dinsdag 13 september 2016 van 18:30 tot 21:00u</li>
-<li><strong>Sessie 3</strong>: Dinsdag 20 september 2016 van 18:30 tot 21:00u</li>
-</ul>
-<p>Locatie: HAN, Kapittelweg 33, 6525 EN Nijmegen (Lokaal C106)</p>
-<!-- Map generated in R 3.3.0 by googleVis 0.5.10 package -->
-<!-- Wed Aug 31 08:01:54 2016 -->
-<!-- jsHeader -->
-<script type="text/javascript">
- 
-// jsData 
-function gvisDataMapID306470db79b () {
-var data = new google.visualization.DataTable();
-var datajson =
-[
- [
- "HAN, Kapittelweg 33, 6525 EN Nijmegen",
-"Lokaal C106<br><a href='https://goo.gl/maps/PA9xeFzKYNp'>Get directions</a>" 
-] 
-];
-data.addColumn('string','adres');
-data.addColumn('string','tooltip');
-data.addRows(datajson);
-return(data);
-}
- 
-// jsDrawChart
-function drawChartMapID306470db79b() {
-var data = gvisDataMapID306470db79b();
-var options = {};
-options["showTip"] = true;
-options["mapType"] = "normal";
-options["zoomLevel"] =     16;
-options["width"] =    100;
-options["height"] =    300;
-
-    var chart = new google.visualization.Map(
-    document.getElementById('MapID306470db79b')
-    );
-    chart.draw(data,options);
-    
-
-}
-  
- 
-// jsDisplayChart
-(function() {
-var pkgs = window.__gvisPackages = window.__gvisPackages || [];
-var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
-var chartid = "map";
-  
-// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
-var i, newPackage = true;
-for (i = 0; newPackage && i < pkgs.length; i++) {
-if (pkgs[i] === chartid)
-newPackage = false;
-}
-if (newPackage)
-  pkgs.push(chartid);
-  
-// Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartMapID306470db79b);
-})();
-function displayChartMapID306470db79b() {
-  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
-  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
-  window.clearTimeout(window.__gvisLoad);
-  // The timeout is set to 100 because otherwise the container div we are
-  // targeting might not be part of the document yet
-  window.__gvisLoad = setTimeout(function() {
-  var pkgCount = pkgs.length;
-  google.load("visualization", "1", { packages:pkgs, callback: function() {
-  if (pkgCount != pkgs.length) {
-  // Race condition where another setTimeout call snuck in after us; if
-  // that call added a package, we must not shift its callback
-  return;
-}
-while (callbacks.length > 0)
-callbacks.shift()();
-} });
-}, 100);
-}
- 
-// jsFooter
-</script>
-<!-- jsChart -->
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMapID306470db79b"></script>
-<!-- divChart -->
-<div id="MapID306470db79b" style="width: 100; height: 300;">
-
-</div>
-<p><br> Tijdens iedere sessie ga je werken aan een opdracht. Je krijgt een dataset (of een verwijzing naar een online databron) en gaat hier informatie uit halen. De instructeur helpt je als je vastloopt of geeft suggesties voor verbeteringen van je code.</p>
-</div>
-<div id="inschrijving" class="section level2">
-<h2>Inschrijving</h2>
-<p>Aanmelding geschiedt via dit <a href="https://drive.google.com/open?id=1rP6KIbqikbLQJ9hJRQQJMWnbCTgfhA0yJLa84JGklVQ" target="_blank">formulier</a>. Er kunnen maximaal 16 personen deelnemen. Mocht er na de aanmelding iets veranderd zijn waardoor je niet meer kunt deelnemen, geef dit dan door aan de instructeur via <a href="mailto:witek.tenhove@han.nl">witek.tenhove@han.nl</a>.</p>
-<p>Inschrijving vindt plaats naar volgorde van aanmelding. Nadat de aanmeldingstermijn is verstreken, zullen de deelnemers per mail worden geinformeerd.</p>
+<p><a href="https://nl.linkedin.com/in/witektenhove">Witek ten Hove</a> is hoofddocent aan de Hogeschool van Arnhem en Nijmegen en voorzitter van de R-User Group in Nijmegen. Na zijn studie aan de Universiteit van Maastricht heeft hij bij verschillende multinationals gewerkt als business analist, beurshandelaar en commodity trader. Zijn specialisaties zijn onder andere data science en online / blended learning. <br><br> De worskhop bestaat uit drie sessies: Inlezen, Analyseren en Presenteren. Tijdens iedere sessie ga je werken aan opdrachten. Je krijgt een dataset (of een verwijzing naar een online databron) en gaat hier informatie uit halen. De instructeur helpt je als je vastloopt of geeft suggesties voor verbeteringen van je code.</p>
 </div>
 <div id="voorbereiding" class="section level2">
 <h2>Voorbereiding</h2>
@@ -366,7 +267,7 @@ callbacks.shift()();
 <pre class="r"><code>install.packages(c(&quot;gsheet&quot;, &quot;rvest&quot;, &quot;dplyr&quot;, &quot;tidyr&quot;, &quot;googleVis&quot;, &quot;plotly&quot;, &quot;leaflet&quot;, &quot;knitr&quot;))</code></pre>
 <p>plak het in de console en druk op <em>Enter</em>.</p>
 <div class="figure">
-<img src="images/console.png" alt="" />
+<img src="images/console.png" />
 
 </div>
 <p><br> Er worden nu een aantal sets van functies geinstalleerd die we tijdens de sessies gaan gebruiken.</p>
@@ -386,7 +287,7 @@ callbacks.shift()();
 </div>
 <p>Er wordt nu een venster met een veld voor tekstbewerking geopend. Je kunt hier je instructies invoeren, bijvoorbeeld een optelling.</p>
 <div class="figure">
-<img src="images/editor.png" alt="" />
+<img src="images/editor.png" />
 
 </div>
 <p><br></p>
@@ -503,7 +404,7 @@ sum(values2)</code></pre>
 studDF &lt;- read.csv(&quot;stud_perf.csv&quot;, stringsAsFactors = FALSE)</code></pre>
 <p>Selecteer alles en klik op Run. In de console van RStudio zie je dat de instructies worden uitgevoerd, maar je ziet verder geen resultaten. R heeft echter alle data in het geheugen geladen. Je kunt dit zien in het <em>Environment</em> veld waar nu een data object <em>studDF</em> is toegevoegd:</p>
 <div class="figure">
-<img src="images/env.png" alt="" />
+<img src="images/env.png" />
 
 </div>
 <p><br> We kunnen snel controleren of de data goed is overgekomen door naar de eerste zes rijen te kijken:</p>
@@ -585,7 +486,7 @@ summary(studDF)</code></pre>
 <p><br> We kunnen hieruit onder andere aflezen dat de gemiddelde score van de kennistoetsen 4.48 bedroeg met een maximum van 8.3 en dat bij de variabele <code>BEC.Propedeuse</code> van 5 observaties de gegevens ontbreken (<code>NA</code>).</p>
 <p>Door in het <em>Environment</em> veld op de variabele <code>StudDF</code> te klikken (of in de <em>Console</em> met het commando <code>View(studDF)</code>), krijg je een tabel met alle data.</p>
 <div class="figure">
-<img src="images/view.png" alt="" />
+<img src="images/view.png" />
 
 </div>
 <div id="vragenset-1a" class="section level3">
@@ -790,7 +691,7 @@ legend(&quot;topleft&quot;,
        legend = plaatsenVec,
        fill=rainbow(9)
 )</code></pre>
-<p><img src="index_files/figure-html/unnamed-chunk-23-1.png" alt="" /><!-- --></p>
+<p><img src="index_files/figure-html/unnamed-chunk-23-1.png" /><!-- --></p>
 <div id="vragenset-2c" class="section level3">
 <h3>Vragenset 2C</h3>
 <ol style="list-style-type: decimal">
@@ -831,363 +732,363 @@ survChart &lt;- gvisBubbleChart(surveyDF,
                                             )
                              )
 plot(survChart)</code></pre>
-<!-- BubbleChart generated in R 3.3.0 by googleVis 0.5.10 package -->
-<!-- Wed Aug 31 08:01:55 2016 -->
+<!-- BubbleChart generated in R 3.3.2 by googleVis 0.6.1 package -->
+<!-- Fri Dec 30 07:04:27 2016 -->
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataBubbleChartID30648046ddb () {
+function gvisDataBubbleChartID30401ee4ffea () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
  [
- "ELIN",
+"ELIN",
 2,
 4,
-"Kans" 
+"Kans"
 ],
 [
- "NIKIA",
+"NIKIA",
 4,
 5,
-"Kans" 
+"Kans"
 ],
 [
- "MARIO",
+"MARIO",
 3,
 5,
-"Kans" 
+"Kans"
 ],
 [
- "ROMAINE",
+"ROMAINE",
 3,
 3,
-"Kans" 
+"Kans"
 ],
 [
- "ALLYSON",
+"ALLYSON",
 4,
 2,
-"Kans" 
+"Kans"
 ],
 [
- "VADA",
+"VADA",
 2,
 4,
-"Kans" 
+"Kans"
 ],
 [
- "MYRLE",
+"MYRLE",
 1,
 4,
-"Kans" 
+"Kans"
 ],
 [
- "VERTIE",
+"VERTIE",
 3,
 3,
-"Kans" 
+"Kans"
 ],
 [
- "DAISY",
+"DAISY",
 3,
 3,
-"Kans" 
+"Kans"
 ],
 [
- "KATHERINE",
+"KATHERINE",
 4,
 4,
-"Kans" 
+"Kans"
 ],
 [
- "SID",
+"SID",
 4,
 3,
-"Kans" 
+"Kans"
 ],
 [
- "LERA",
+"LERA",
 4,
 4,
-"Kans" 
+"Kans"
 ],
 [
- "MARLYS",
+"MARLYS",
 3,
 4,
-"Kans" 
+"Kans"
 ],
 [
- "ANTON",
+"ANTON",
 5,
 3,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "CHRISTEN",
+"CHRISTEN",
 3,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "KYLEE",
+"KYLEE",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "KAI",
+"KAI",
 2,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "NELL",
+"NELL",
 3,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "KIRSTIE",
+"KIRSTIE",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "THERESIA",
+"THERESIA",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "MOSES",
+"MOSES",
 3,
 5,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "BRYANT",
+"BRYANT",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "LEZLIE",
+"LEZLIE",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "SANDI",
+"SANDI",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "ARNETTA",
+"ARNETTA",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "LAVINA",
+"LAVINA",
 2,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "IGNACIA",
+"IGNACIA",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "ARLETHA",
+"ARLETHA",
 4,
 3,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "WILTON",
+"WILTON",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "ALTHA",
+"ALTHA",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "GEORGIANN",
+"GEORGIANN",
 5,
 5,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "EMMETT",
+"EMMETT",
 2,
 5,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "MAMIE",
+"MAMIE",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "ROXANA",
+"ROXANA",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "JERRY",
+"JERRY",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "MARINE",
+"MARINE",
 2,
 5,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "HONG",
+"HONG",
 3,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "RHETT",
+"RHETT",
 2,
 2,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "DEDRA",
+"DEDRA",
 5,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "MALIK",
+"MALIK",
 5,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "KELSEY",
+"KELSEY",
 3,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "SHANDI",
+"SHANDI",
 3,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "HERMINA",
+"HERMINA",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "CATHARINE",
+"CATHARINE",
 3,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "SHERRIL",
+"SHERRIL",
 2,
 5,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "SHAWANA",
+"SHAWANA",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "ALICA",
+"ALICA",
 3,
 3,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "SHAREN",
+"SHAREN",
 4,
 3,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "CAROLEE",
+"CAROLEE",
 4,
 3,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "YASUKO",
+"YASUKO",
 4,
 3,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "FUMIKO",
+"FUMIKO",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "SHON",
+"SHON",
 5,
 5,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "MONNIE",
+"MONNIE",
 4,
 5,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "BETTYE",
+"BETTYE",
 5,
 5,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "SUE",
+"SUE",
 4,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "JARED",
+"JARED",
 2,
 2,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "LAURI",
+"LAURI",
 5,
 4,
-"Bedreiging" 
+"Bedreiging"
 ],
 [
- "FAWN",
+"FAWN",
 4,
 3,
-"Bedreiging" 
+"Bedreiging"
 ] 
 ];
 data.addColumn('string','Naam');
@@ -1199,16 +1100,16 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartBubbleChartID30648046ddb() {
-var data = gvisDataBubbleChartID30648046ddb();
+function drawChartBubbleChartID30401ee4ffea() {
+var data = gvisDataBubbleChartID30401ee4ffea();
 var options = {};
 options["hAxis"] = {minValue:1, maxValue:5, title:"Gevolg"};
 options["vAxis"] = {minValue:1, maxValue:5, title:"Waarschijnlijkheid"};
-options["width"] =    700;
-options["height"] =    700;
+options["width"] = 700;
+options["height"] = 700;
 
     var chart = new google.visualization.BubbleChart(
-    document.getElementById('BubbleChartID30648046ddb')
+    document.getElementById('BubbleChartID30401ee4ffea')
     );
     chart.draw(data,options);
     
@@ -1232,9 +1133,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartBubbleChartID30648046ddb);
+callbacks.push(drawChartBubbleChartID30401ee4ffea);
 })();
-function displayChartBubbleChartID30648046ddb() {
+function displayChartBubbleChartID30401ee4ffea() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -1257,9 +1158,9 @@ callbacks.shift()();
 // jsFooter
 </script>
 <!-- jsChart -->
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBubbleChartID30648046ddb"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBubbleChartID30401ee4ffea"></script>
 <!-- divChart -->
-<div id="BubbleChartID30648046ddb" style="width: 700; height: 700;">
+<div id="BubbleChartID30401ee4ffea" style="width: 700; height: 700;">
 
 </div>
 <div id="vragenset-3a" class="section level3">
@@ -1330,13 +1231,13 @@ m1</code></pre>
 <h2>Presenteren.</h2>
 <p>Natuurlijk wil je uiteindelijk de uitkomsten van je werk met anderen delen. In R kun je heel gemakkelijk rapportages in verschillende formats (HTML, pdf of Word) creëren, waarin je tekst, code, tabellen en grafieken integreerd. Hiervoor open je een RMarkdown script.</p>
 <div class="figure">
-<img src="images/rmarkd.png" alt="" />
+<img src="images/rmarkd.png" />
 
 </div>
 <p><br> Geef je document een titel en kies wat voor een soort document je wilt maken. In dit voorbeeld gaan we een webpagina bouwen en kiezen dus voor HTML.</p>
 <p>R bouwt alvast een template met wat voorbeelden, zodat je direct aan de slag kunt. Als je wilt testen hoe het document er uit gaat zien, klik je op <em>Knit HTML</em>.</p>
 <div class="figure">
-<img src="images/knit.png" alt="" />
+<img src="images/knit.png" />
 
 </div>
 <p><br> In het bovenste gedeelte van het het <em>RMarkdown script</em> zie je een zogenaamd YAML veld waarin meta data staat. Je kunt deze veranderen en extra variabelen toevoegen (bijvoorbeeld een inhoudsopgave). Online is veel informatie te vinden over het gebruik van YAML en (R) Markdown. Voor RMarkdown vind je onder het helpmenu van RStudio ook een <em>Cheatsheet</em> en een handleiding.</p>
@@ -1380,7 +1281,7 @@ legend("topright",
 </pre>
 <p>Als het document volledig naar wens is, kun je het snel publiceren op internet via <a href="http://rpubs.com/">Rpubs</a>. Klik hiervoor op het ‘blauwe oogje’.</p>
 <div class="figure">
-<img src="images/rpubs.png" alt="" />
+<img src="images/rpubs.png" />
 
 </div>
 <p><br> en volg de instructies. De <a href="http://rpubs.com/tweety/ExampleRmd">link</a> naar je document op RPubs kun je delen met betrokkenen en bijvoorbeeld integreren in het intranet van je organisatie of toevoegen aan een mail. LET OP: de informatie op RPubs is niet afgeschermd en zichtbaar voor iedereen die het webadres heeft.</p>
@@ -1397,9 +1298,13 @@ legend("topright",
 <script>
 
 // add bootstrap table styles to pandoc tables
-$(document).ready(function () {
+function bootstrapStylePandocTables() {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
 });
+
 
 </script>
 
