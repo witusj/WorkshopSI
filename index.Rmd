@@ -502,7 +502,7 @@ m1
 
 3. Gebruik deze [data](https://raw.githubusercontent.com/witusj/R-workshop/gh-pages/Datasets/sessie%203/event_data.csv) om een nieuwe geografische kaart te bouwen en analyseer de informatie.
 
-## Presenteren.
+## Presenteren
 Natuurlijk wil je uiteindelijk de uitkomsten van je werk met anderen delen. In R kun je heel gemakkelijk rapportages in verschillende formats (HTML, pdf of Word) creëren, waarin je tekst, code, tabellen en grafieken integreerd. Hiervoor open je een RMarkdown script.
 
 ![](images/rmarkd.png)
