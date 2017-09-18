@@ -487,8 +487,9 @@ lonCtr <- mean(gpsDF$lon)
 
 ## Bouw de kaart en geef weer
 m1 <- leaflet() %>%
+  addProviderTiles(providers$OpenStreetMap) %>%
   addTiles() %>%
-  setView(lonCtr, latCtr, 12) %>% # map location
+  setView(lonCtr, latCtr, zoom = 12) %>% # map location
   # add som circles:
   addCircles(color = "Red", lng=gpsDF$lon, lat=gpsDF$lat, 20)
 m1
