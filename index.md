@@ -724,14 +724,14 @@ plot(survChart)
 ```
 
 <!-- BubbleChart generated in R 3.4.1 by googleVis 0.6.2 package -->
-<!-- Mon Sep 18 16:44:43 2017 -->
+<!-- Mon Sep 18 16:50:22 2017 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataBubbleChartID12c1b6e399661 () {
+function gvisDataBubbleChartID13242716bc9b6 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -1093,8 +1093,8 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartBubbleChartID12c1b6e399661() {
-var data = gvisDataBubbleChartID12c1b6e399661();
+function drawChartBubbleChartID13242716bc9b6() {
+var data = gvisDataBubbleChartID13242716bc9b6();
 var options = {};
 options["hAxis"] = {minValue:1, maxValue:5, title:"Gevolg"};
 options["vAxis"] = {minValue:1, maxValue:5, title:"Waarschijnlijkheid"};
@@ -1102,7 +1102,7 @@ options["width"] = 700;
 options["height"] = 700;
 
     var chart = new google.visualization.BubbleChart(
-    document.getElementById('BubbleChartID12c1b6e399661')
+    document.getElementById('BubbleChartID13242716bc9b6')
     );
     chart.draw(data,options);
     
@@ -1126,9 +1126,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartBubbleChartID12c1b6e399661);
+callbacks.push(drawChartBubbleChartID13242716bc9b6);
 })();
-function displayChartBubbleChartID12c1b6e399661() {
+function displayChartBubbleChartID13242716bc9b6() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -1152,11 +1152,11 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBubbleChartID12c1b6e399661"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBubbleChartID13242716bc9b6"></script>
  
 <!-- divChart -->
   
-<div id="BubbleChartID12c1b6e399661" 
+<div id="BubbleChartID13242716bc9b6" 
   style="width: 700; height: 700;">
 </div>
 
@@ -1190,8 +1190,8 @@ p <- plot_ly(meanvarDF,
 p
 ```
 
-<!--html_preserve--><div id="12c1b47a237f6" style="width:672px;height:480px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="12c1b47a237f6">{"x":{"visdat":{"12c1b527a002f":["function () ","plotlyVisDat"]},"cur_data":"12c1b527a002f","attrs":{"12c1b527a002f":{"x":{},"y":{},"text":{},"mode":"text+markers","marker":{"size":{}},"color":{},"colors":["red","orange","white","light blue","dodgerblue"],"alpha":1,"sizes":[10,100],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"title":"Waarschijnlijkheid"},"yaxis":{"domain":[0,1],"title":"Gevolgen"},"hovermode":"closest","showlegend":false,"legend":{"y":0.5,"yanchor":"top"}},"source":"A","config":{"modeBarButtonsToAdd":[{"name":"Collaborate","icon":{"width":1000,"ascent":500,"descent":-50,"path":"M487 375c7-10 9-23 5-36l-79-259c-3-12-11-23-22-31-11-8-22-12-35-12l-263 0c-15 0-29 5-43 15-13 10-23 23-28 37-5 13-5 25-1 37 0 0 0 3 1 7 1 5 1 8 1 11 0 2 0 4-1 6 0 3-1 5-1 6 1 2 2 4 3 6 1 2 2 4 4 6 2 3 4 5 5 7 5 7 9 16 13 26 4 10 7 19 9 26 0 2 0 5 0 9-1 4-1 6 0 8 0 2 2 5 4 8 3 3 5 5 5 7 4 6 8 15 12 26 4 11 7 19 7 26 1 1 0 4 0 9-1 4-1 7 0 8 1 2 3 5 6 8 4 4 6 6 6 7 4 5 8 13 13 24 4 11 7 20 7 28 1 1 0 4 0 7-1 3-1 6-1 7 0 2 1 4 3 6 1 1 3 4 5 6 2 3 3 5 5 6 1 2 3 5 4 9 2 3 3 7 5 10 1 3 2 6 4 10 2 4 4 7 6 9 2 3 4 5 7 7 3 2 7 3 11 3 3 0 8 0 13-1l0-1c7 2 12 2 14 2l218 0c14 0 25-5 32-16 8-10 10-23 6-37l-79-259c-7-22-13-37-20-43-7-7-19-10-37-10l-248 0c-5 0-9-2-11-5-2-3-2-7 0-12 4-13 18-20 41-20l264 0c5 0 10 2 16 5 5 3 8 6 10 11l85 282c2 5 2 10 2 17 7-3 13-7 17-13z m-304 0c-1-3-1-5 0-7 1-1 3-2 6-2l174 0c2 0 4 1 7 2 2 2 4 4 5 7l6 18c0 3 0 5-1 7-1 1-3 2-6 2l-173 0c-3 0-5-1-8-2-2-2-4-4-4-7z m-24-73c-1-3-1-5 0-7 2-2 3-2 6-2l174 0c2 0 5 0 7 2 3 2 4 4 5 7l6 18c1 2 0 5-1 6-1 2-3 3-5 3l-174 0c-3 0-5-1-7-3-3-1-4-4-5-6z"},"click":"function(gd) { \n        // is this being viewed in RStudio?\n        if (location.search == '?viewer_pane=1') {\n          alert('To learn about plotly for collaboration, visit:\\n https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html');\n        } else {\n          window.open('https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html', '_blank');\n        }\n      }"}],"cloud":false},"data":[{"x":[3.5,4.5,3.6,3.4,3.3,3.1,3.5],"y":[3.9,4.1,3.7,3.7,3.5,3.8,3.6],"text":["W&R","ICT","HR","Toetreders","Rente","Verdienmodel","Vermogenverschaffers"],"mode":"text+markers","marker":{"colorbar":{"title":"Perc.Kans","ticklen":2},"cmin":21,"cmax":74,"colorscale":[["0","rgba(255,0,0,1)"],["0.00471698113207547","rgba(255,15,0,1)"],["0.00943396226415094","rgba(255,25,0,1)"],["0.0141509433962264","rgba(255,33,0,1)"],["0.0188679245283019","rgba(255,39,0,1)"],["0.174528301886792","rgba(255,133,0,1)"],["0.330188679245283","rgba(255,193,105,1)"],["0.485849056603774","rgba(255,250,242,1)"],["0.641509433962264","rgba(209,233,241,1)"],["0.707547169811321","rgba(187,223,234,1)"],["0.773584905660377","rgba(165,209,233,1)"],["0.839622641509434","rgba(140,189,240,1)"],["0.905660377358491","rgba(110,170,246,1)"],["0.929245283018868","rgba(97,163,248,1)"],["0.952830188679245","rgba(81,157,251,1)"],["0.976415094339623","rgba(62,150,253,1)"],["1","rgba(30,144,255,1)"]],"showscale":false,"color":[22,74,69,21,55,69,22],"size":[66.55,36.45,50,109.85,109.85,86.4,86.4],"line":{"color":"transparent"}},"type":"scatter","xaxis":"x","yaxis":"y","frame":null},{"x":[3.1,4.5],"y":[3.5,4.1],"type":"scatter","mode":"markers","opacity":0,"hoverinfo":"none","showlegend":false,"marker":{"colorbar":{"title":"Perc.Kans","ticklen":2,"len":0.5,"y":1,"lenmode":"fraction","yanchor":"top"},"cmin":21,"cmax":74,"colorscale":[["0","rgba(255,0,0,1)"],["0.00471698113207547","rgba(255,15,0,1)"],["0.00943396226415094","rgba(255,25,0,1)"],["0.0141509433962264","rgba(255,33,0,1)"],["0.0188679245283019","rgba(255,39,0,1)"],["0.174528301886792","rgba(255,133,0,1)"],["0.330188679245283","rgba(255,193,105,1)"],["0.485849056603774","rgba(255,250,242,1)"],["0.641509433962264","rgba(209,233,241,1)"],["0.707547169811321","rgba(187,223,234,1)"],["0.773584905660377","rgba(165,209,233,1)"],["0.839622641509434","rgba(140,189,240,1)"],["0.905660377358491","rgba(110,170,246,1)"],["0.929245283018868","rgba(97,163,248,1)"],["0.952830188679245","rgba(81,157,251,1)"],["0.976415094339623","rgba(62,150,253,1)"],["1","rgba(30,144,255,1)"]],"showscale":true,"color":[21,74]},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1}},"base_url":"https://plot.ly"},"evals":["config.modeBarButtonsToAdd.0.click"],"jsHooks":{"render":[{"code":"function(el, x) { var ctConfig = crosstalk.var('plotlyCrosstalkOpts').set({\"on\":\"plotly_click\",\"persistent\":false,\"dynamic\":false,\"selectize\":false,\"opacityDim\":0.2,\"selected\":{\"opacity\":1}}); }","data":null}]}}</script><!--/html_preserve-->
+<!--html_preserve--><div id="1324236d6e475" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="1324236d6e475">{"x":{"visdat":{"1324256b1dbd2":["function () ","plotlyVisDat"]},"cur_data":"1324256b1dbd2","attrs":{"1324256b1dbd2":{"x":{},"y":{},"text":{},"mode":"text+markers","marker":{"size":{}},"color":{},"colors":["red","orange","white","light blue","dodgerblue"],"alpha":1,"sizes":[10,100],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"title":"Waarschijnlijkheid"},"yaxis":{"domain":[0,1],"title":"Gevolgen"},"hovermode":"closest","showlegend":false,"legend":{"y":0.5,"yanchor":"top"}},"source":"A","config":{"modeBarButtonsToAdd":[{"name":"Collaborate","icon":{"width":1000,"ascent":500,"descent":-50,"path":"M487 375c7-10 9-23 5-36l-79-259c-3-12-11-23-22-31-11-8-22-12-35-12l-263 0c-15 0-29 5-43 15-13 10-23 23-28 37-5 13-5 25-1 37 0 0 0 3 1 7 1 5 1 8 1 11 0 2 0 4-1 6 0 3-1 5-1 6 1 2 2 4 3 6 1 2 2 4 4 6 2 3 4 5 5 7 5 7 9 16 13 26 4 10 7 19 9 26 0 2 0 5 0 9-1 4-1 6 0 8 0 2 2 5 4 8 3 3 5 5 5 7 4 6 8 15 12 26 4 11 7 19 7 26 1 1 0 4 0 9-1 4-1 7 0 8 1 2 3 5 6 8 4 4 6 6 6 7 4 5 8 13 13 24 4 11 7 20 7 28 1 1 0 4 0 7-1 3-1 6-1 7 0 2 1 4 3 6 1 1 3 4 5 6 2 3 3 5 5 6 1 2 3 5 4 9 2 3 3 7 5 10 1 3 2 6 4 10 2 4 4 7 6 9 2 3 4 5 7 7 3 2 7 3 11 3 3 0 8 0 13-1l0-1c7 2 12 2 14 2l218 0c14 0 25-5 32-16 8-10 10-23 6-37l-79-259c-7-22-13-37-20-43-7-7-19-10-37-10l-248 0c-5 0-9-2-11-5-2-3-2-7 0-12 4-13 18-20 41-20l264 0c5 0 10 2 16 5 5 3 8 6 10 11l85 282c2 5 2 10 2 17 7-3 13-7 17-13z m-304 0c-1-3-1-5 0-7 1-1 3-2 6-2l174 0c2 0 4 1 7 2 2 2 4 4 5 7l6 18c0 3 0 5-1 7-1 1-3 2-6 2l-173 0c-3 0-5-1-8-2-2-2-4-4-4-7z m-24-73c-1-3-1-5 0-7 2-2 3-2 6-2l174 0c2 0 5 0 7 2 3 2 4 4 5 7l6 18c1 2 0 5-1 6-1 2-3 3-5 3l-174 0c-3 0-5-1-7-3-3-1-4-4-5-6z"},"click":"function(gd) { \n        // is this being viewed in RStudio?\n        if (location.search == '?viewer_pane=1') {\n          alert('To learn about plotly for collaboration, visit:\\n https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html');\n        } else {\n          window.open('https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html', '_blank');\n        }\n      }"}],"cloud":false},"data":[{"x":[3.5,4.5,3.6,3.4,3.3,3.1,3.5],"y":[3.9,4.1,3.7,3.7,3.5,3.8,3.6],"text":["W&R","ICT","HR","Toetreders","Rente","Verdienmodel","Vermogenverschaffers"],"mode":"text+markers","marker":{"colorbar":{"title":"Perc.Kans","ticklen":2},"cmin":21,"cmax":74,"colorscale":[["0","rgba(255,0,0,1)"],["0.00471698113207547","rgba(255,15,0,1)"],["0.00943396226415094","rgba(255,25,0,1)"],["0.0141509433962264","rgba(255,33,0,1)"],["0.0188679245283019","rgba(255,39,0,1)"],["0.174528301886792","rgba(255,133,0,1)"],["0.330188679245283","rgba(255,193,105,1)"],["0.485849056603774","rgba(255,250,242,1)"],["0.641509433962264","rgba(209,233,241,1)"],["0.707547169811321","rgba(187,223,234,1)"],["0.773584905660377","rgba(165,209,233,1)"],["0.839622641509434","rgba(140,189,240,1)"],["0.905660377358491","rgba(110,170,246,1)"],["0.929245283018868","rgba(97,163,248,1)"],["0.952830188679245","rgba(81,157,251,1)"],["0.976415094339623","rgba(62,150,253,1)"],["1","rgba(30,144,255,1)"]],"showscale":false,"color":[22,74,69,21,55,69,22],"size":[66.55,36.45,50,109.85,109.85,86.4,86.4],"line":{"color":"transparent"}},"type":"scatter","xaxis":"x","yaxis":"y","frame":null},{"x":[3.1,4.5],"y":[3.5,4.1],"type":"scatter","mode":"markers","opacity":0,"hoverinfo":"none","showlegend":false,"marker":{"colorbar":{"title":"Perc.Kans","ticklen":2,"len":0.5,"y":1,"lenmode":"fraction","yanchor":"top"},"cmin":21,"cmax":74,"colorscale":[["0","rgba(255,0,0,1)"],["0.00471698113207547","rgba(255,15,0,1)"],["0.00943396226415094","rgba(255,25,0,1)"],["0.0141509433962264","rgba(255,33,0,1)"],["0.0188679245283019","rgba(255,39,0,1)"],["0.174528301886792","rgba(255,133,0,1)"],["0.330188679245283","rgba(255,193,105,1)"],["0.485849056603774","rgba(255,250,242,1)"],["0.641509433962264","rgba(209,233,241,1)"],["0.707547169811321","rgba(187,223,234,1)"],["0.773584905660377","rgba(165,209,233,1)"],["0.839622641509434","rgba(140,189,240,1)"],["0.905660377358491","rgba(110,170,246,1)"],["0.929245283018868","rgba(97,163,248,1)"],["0.952830188679245","rgba(81,157,251,1)"],["0.976415094339623","rgba(62,150,253,1)"],["1","rgba(30,144,255,1)"]],"showscale":true,"color":[21,74]},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1}},"base_url":"https://plot.ly"},"evals":["config.modeBarButtonsToAdd.0.click"],"jsHooks":{"render":[{"code":"function(el, x) { var ctConfig = crosstalk.var('plotlyCrosstalkOpts').set({\"on\":\"plotly_click\",\"persistent\":false,\"dynamic\":false,\"selectize\":false,\"opacityDim\":0.2,\"selected\":{\"opacity\":1}}); }","data":null}]}}</script><!--/html_preserve-->
 
 ### Vragenset 3B
 1. Wat voor een structuur heeft `meanvarDF`?
