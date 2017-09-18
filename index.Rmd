@@ -411,6 +411,7 @@ De data die we gebruiken, komt uit een Google Spreadsheet.
 ## Lees data uit Google Spreadsheet
 url <- 'https://docs.google.com/spreadsheets/d/1f0qX_BBu-4qhKHa6mBiwbUHmUahrXcHeWieBDD9fiXg'
 surveyDF <- gsheet2tbl(url)
+surveyDF <- rename(surveyDF, Soort.Risico = `Soort Risico`)
 ```
 
 Met de functie `gvisBubbleChart()` wordt alle code gegegenereerd die nodig is om de grafiek in een html pagina weer te geven. Met de `plot()` functie wordt de grafiek in een webbrowser getoond.
@@ -452,19 +453,13 @@ meanvarDF <- read.csv(file = "https://raw.githubusercontent.com/witusj/R-worksho
 ## Laad packages
 library(plotly)
 
-## Bouw Plotly Chart
-p <- plot_ly(
-  meanvarDF,
-  x = Waarschijnlijkheid,
-  y = Gevolgen,
-  color = Perc.Kans,
-  size = Spreiding,
-  text = Topic,
-  mode = "text+markers",
-  cmin = 0,
-  cmax = 1,
-  colors = c("red", "orange", "white", "light blue" , "dodgerblue")
-)
+p <- plot_ly(meanvarDF,
+        x = ~Waarschijnlijkheid,
+        y = ~Gevolgen, text = ~Topic,
+        type = 'scatter', mode = 'text+markers',
+        color = ~Perc.Kans,
+        colors = c("red", "orange", "white", "light blue" , "dodgerblue"),
+        marker = list(size = ~Spreiding*50))
 p
 ```
 
@@ -475,7 +470,7 @@ p
 
 3. Verander de chart, zodat in plaats van het thema het percentage van deelnemers wordt getoond dat aangaf het thema als een kans te zien.
 
-In de volgende oefening gaan we data in een geografische kaart plaatsen. De data is via een mobiele telefoon verzameld en kan [hier](https://raw.githubusercontent.com/witusj/R-workshop/gh-pages/Datasets/sessie%203/mean_var.csv) opgehaald worden. We gebruiken de [Leaflet](https://rstudio.github.io/leaflet/) package.
+In de volgende oefening gaan we data in een geografische kaart plaatsen. De data is via een mobiele telefoon verzameld en kan [hier](https://raw.githubusercontent.com/witusj/R-workshop/gh-pages/Datasets/sessie%203/gps_data.csv) opgehaald worden. We gebruiken de [Leaflet](https://rstudio.github.io/leaflet/) package.
 
 ```{r, message=FALSE, warning=FALSE, include=FALSE}
 gpsDF <- read.csv(file = "https://raw.githubusercontent.com/witusj/R-workshop/gh-pages/Datasets/sessie%203/gps_data.csv",
