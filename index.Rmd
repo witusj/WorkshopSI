@@ -182,7 +182,7 @@ Er zijn online ontzettend veel gratis handleidingen voor R te vinden. Volgende d
 
 - [An Introduction to R](https://cran.r-project.org/doc/manuals/R-intro.pdf)
 
-- [Introduction to R for Excel Users](https://dl.dropboxusercontent.com/u/12616850/R_Intro_for_Excel.pdf)
+- [Introduction to R for Excel Users](https://drive.google.com/open?id=0B63Xv-VjVpxSM0htV08wTkRkOWM)
 
 Al je een indruk wilt krijgen van wat je allemaal met R kunt, is de [R-bloggers](https://www.r-bloggers.com/) website een goed startpunt.
 
