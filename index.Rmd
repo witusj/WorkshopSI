@@ -32,13 +32,11 @@ Deze workshop is ontwikkeld voor mensen die nog geen of zeer beperkte ervaring h
 De worskhop bestaat uit drie sessies: Inlezen, Analyseren en Presenteren. Tijdens iedere sessie ga je werken aan opdrachten. Je krijgt een dataset (of een verwijzing naar een online databron) en gaat hier informatie uit halen. De instructeur helpt je als je vastloopt of geeft suggesties voor verbeteringen van je code.
 
 ## Voorbereiding
-Om direct aan de gang te kunnen gaan tijdens de workshop sessies is het belangrijk dat je R op je computer installeert. Zie [hier](https://youtu.be/cX532N_XLIs?list=PLqzoL9-eJTNBDdKgJgJzaQcY6OXmsXAHU) voor instructies (Engels).
-
-Dit is de Nederlandse [downloadsite](http://cran.xl-mirror.nl/) voor R (je kunt ook iedere andere downloadsite gebruiken).
+Om direct aan de gang te kunnen gaan tijdens de workshop sessies is het belangrijk dat je R op je computer installeert. Dit is [downloadsite](http://cran.xl-mirror.nl/) voor R. Zie [hier](https://youtu.be/cX532N_XLIs?list=PLqzoL9-eJTNBDdKgJgJzaQcY6OXmsXAHU) voor instructies (Engels).
 
 Als je klaar bent met de installatie kun je in principe al aan de gang gaan met het pakket. R heeft namelijk een eigen interface, waarmee via een command line opdrachten kunnen worden ingevoerd.
 
-Om echter wat comfortabeler te programmeren zijn er zogenaamde *integrated development environments (IDEs)* ontwikkeld. Wij gaan werken met die van [RStudio](http://cran.xl-mirror.nl/). Ook deze software is gratis te [downloaden](https://www.rstudio.com/products/rstudio/download2/).
+Om echter wat comfortabeler te programmeren zijn er zogenaamde *integrated development environments (IDEs)* ontwikkeld. Wij gaan werken met die van [RStudio](https://cloud.r-project.org/). Ook deze software is gratis te [downloaden](https://www.rstudio.com/products/rstudio/download/#download).
 
 LET OP: Het is belangrijk dat je eerst R en daarna RStudio installeert.
 
